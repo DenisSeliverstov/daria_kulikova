@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бросок игральных костей</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <img src="photo.png" alt="Дарья Куликова" class="trainer-photo">
+    <p class="trainer-description">
+      Я, Дарья Куликова, собственник студии красоты, игропрактик,</br> мотивирующий коуч, ведущая игры по
+      продвижению</br> личного бренда.
+    </p>
+    <h1 class="game-title">Трансформационная игра</br> "Кто, если не я?"</h1>
+    <p class="game-description">
+      Игра предназначена для тех, кто намерен создать свой личный бренд</br> и обеспечить его грамотное продвижение, при
+      этом в игре содержится 100 действий,</br> на которых базируется построение личного бренда.
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="dice" id="dice">
+      <div class="side one">
+        <div class="dot center"></div>
+      </div>
+      <div class="side two">
+        <div class="dot top-left"></div>
+        <div class="dot bottom-right"></div>
+      </div>
+      <div class="side three">
+        <div class="dot top-left"></div>
+        <div class="dot center"></div>
+        <div class="dot bottom-right"></div>
+      </div>
+      <div class="side four">
+        <div class="dot top-left"></div>
+        <div class="dot top-right"></div>
+        <div class="dot bottom-left"></div>
+        <div class="dot bottom-right"></div>
+      </div>
+      <div class="side five">
+        <div class="dot top-left"></div>
+        <div class="dot top-right"></div>
+        <div class="dot center"></div>
+        <div class="dot bottom-left"></div>
+        <div class="dot bottom-right"></div>
+      </div>
+      <div class="side six">
+        <div class="dot top-left"></div>
+        <div class="dot top-right"></div>
+        <div class="dot middle-left"></div>
+        <div class="dot middle-right"></div>
+        <div class="dot bottom-left"></div>
+        <div class="dot bottom-right"></div>
+      </div>
+    </div>
+    <div id="game">
+      <div id="result"></div>
+      <button id="rollButton">Бросить кубик</button>
+    </div>
+    <div id="afterThreeRolls" style="display: none;">
+      <span>Сделай свой следующий ход и присоединись</br> к Демо игре в Телеграм</span>
+      <a href="https://t.me/daryakul_igra/2" id="joinGameButton" target="_blank">Записаться на Игру</a>
+    </div>
+  </div>
+
+  <audio id="diceSound" src="dice-sound.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
