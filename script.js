@@ -68,7 +68,7 @@ document.getElementById("rollButton").addEventListener("click", function () {
     result.textContent = `Выпало: ${randomNum}. ${questions[randomNum - 1]}`;
 
     // Показ сообщения и кнопки после 3-х бросков
-    if (rollCount >= 3) {
+    if (rollCount > 3) {
       afterThreeRolls.style.display = "flex";
       game.style.display = 'none'
     }
